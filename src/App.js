@@ -3,7 +3,7 @@ import './App.css';
 import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextBox from './components/TextBox';
-// import About from './components/About';
+import About from './components/About';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -93,9 +93,9 @@ function App() {
         <Navbar mode={mode} BtnText={BtnText} page={"About"} darkMode={darkMode} redMode={redMode} greenMode={greenMode} blueMode={blueMode} />
         <Alert alert={alert} />
         <Routes>
-          {/* <Route exact path="/about" element={<About mode={mode} />}>
+          <Route exact path="/about" element={<About mode={mode} />}>
 
-          </Route> */}
+          </Route>
 
           <Route exact path="/" element={<TextBox mode={mode} BtnText={BtnText} showAlert={showAlert} />}>
 
